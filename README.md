@@ -1,1 +1,1 @@
-# Stock-Market-Predictor
+# Hacksprint_ps05_WickedTrojans
