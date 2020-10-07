@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>BIOCON</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <style>
+        table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+    </head>
+    <body>
+    <a href="http://localhost:5000/access/data/biocon">BIOCON</a></li>
+    <canvas id="chart" width="600" height="200"></canvas>
+    <script>
+    var ctx = document.getElementById('chart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Day1', 'Day2', 'Day3', 'Day4', 'Day5', 'Day6','Day7','Day8','Day9','Day10'],
+        datasets: [{
+            label: 'Stock Market Prediction of BIOCON',
+            data: [313,313,313,312,310,310,311,310,312,313],
+            fill:false,
+            backgroundColor:'rgba(255, 99, 132, 0.2)',
+            borderColor:  'rgba(153, 102, 255, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+    </script>
+        <table class="center">
+        <caption>Prediction</caption>
+    <tr>
+        <td>Day Order</td>
+        <td>Prediction Value</td>
+    </tr>
+    <tr>
+        <td>Day1</td>
+        <td>313.74366056474173</td>
+    </tr>
+    <tr>
+        <td>Day2</td>
+        <td>313.67200551857286</td>
+    </tr>
+    <tr>
+        <td>Day3</td>
+        <td>313.7406745397642</td>
+    </tr>
+    <tr>
+        <td>Day4</td>
+        <td>312.3722450478208</td>
+    </tr>
+    <tr>
+        <td>Day5</td>
+        <td>310.40818570477677</td>
+    </tr>
+    <tr>
+        <td>Day6</td>
+        <td>310.40818570477677</td>
+    </tr>
+    <tr>
+        <td>Day7</td>
+        <td>311.2678919944361</td>
+    </tr>
+    <tr>
+        <td>Day8</td>
+        <td>310.56912358300883</td>
+    </tr>
+    <tr>
+        <td>Day9</td>
+        <td>312.3568839737235</td>
+    </tr>
+    <tr>
+        <td>Day10</td>
+        <td>313.34302970977615
+</td>
+    </tr>
+</table>
+    </body>
+
+</html>

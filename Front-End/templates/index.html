@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Data Reader</title>
+    </head>
+    <body>
+        <table>
+            {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+            {% endfor %}
+            </table>
+    </body>
+
+</html>
